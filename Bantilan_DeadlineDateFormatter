@@ -1,0 +1,35 @@
+Version 1	Initial version - basic input and output	The program asks for inputs and displays simple output without date formatting.
+event = input("Enter event title: ")
+year = int(input("Enter year: "))
+month = int(input("Enter month: "))
+day = int(input("Enter day: "))
+
+event_date = date(year, month, day)
+print("\nFormatted Output:")
+print("Event:", event.upper())
+print("Date:", event_date.strftime("%B %d, %Y"))
+print("Year:", year)
+print("Month:", event_date.strftime("%B"))
+print("Day:", day)
+print("Weekday:", event-date.strftime("%A"))
+
+Version 2	Added date formatting	The program displays the event date in a readable format using a date/time feature.
+
+event_title = input("enter the event title: ")
+year = int(input("enter the year: "))
+month = int(input("enter month: "))
+day = int(input("enter day: "))
+
+event_date = date(year, month, day)
+
+formatted_title = event_title.upper()
+formatted_date= event_title.upper()
+month_name = event_date.strftime("%B")
+weekday_name = event_date.strftime("%A")
+
+print("\nFormated Output: ")
+print(f"Event:, {formatted_title}")
+print(f"Year: {formatted_date,year}")
+print(f"Month:, {formatted_date}")
+print(f"Day: {event_title, day}")
+print(f"Weekday:, {weekday_name}")
